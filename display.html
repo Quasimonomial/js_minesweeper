@@ -1,4 +1,55 @@
-<h1>Welcomle to minesweeper</h1>
+<html>
+	<head>
+		<style>
+			h1{
+				color: blue;
+			}
+
+			div .tile{
+				background-color: red;
+				width: 32px;
+				height: 32px;
+				border-style: solid;
+				display: inline-block;
+				margin: 4px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript">
+		//creates the tiles we are going to use to run the game
+		</script>
+	</head>
 
 
-<div id="game"></div>
+	<body>
+		<h1>Welcomle to minesweeper</h1>
+
+		<div id="game">
+			<div class="grid"></div>
+			<form>
+			<label>Height:
+				<input type="text">
+			</label>
+			<label>Width:
+				<input type="text">
+			</label>
+			<button>Generate Game!</button>
+			</form>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		tile = new GameCell
+		console.log(tile)
+		function GameCell(){
+			this.htmlText = "<div class='tile'></div>";
+		}
+		for(i = 0; i < 10; i++){
+			for(j = 0; j < 10; j++){
+				$(".grid").append(tile.htmlText)
+			}
+			$(".grid").append('<br>')
+		}
+	</script>
+
+</html>
